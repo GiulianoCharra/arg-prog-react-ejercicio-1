@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html
-  lang="es"
->
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -23,10 +21,14 @@
       defer
       src="./script.js"
     ></script>
-    s
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
   </head>
-  <body class="container">
-    <div>
+  <body class="d-flex flex-column h-100 align-items-center justify-content-center">
+    <h1>Ejercicio 1: Formulario</h1>
+    <div class="container">
       <form>
         <div class="mb-3">
           <label
@@ -111,10 +113,10 @@
             <option value="En Testing">En Testing</option>
             <option value="Completada">Completada</option>
           </select>
-          <p class="fs-5">
+          <p class="fs-6 m-3">
             Estado seleccionado:
             <span
-              class="text-success opacity-100"
+              class="text-success fw-bold opacity-100"
               id="estadoSeleccionado"
               >Pendiente</span
             >
